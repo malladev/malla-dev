@@ -44,65 +44,6 @@ export default function About() {
           }}
         />
       </div>
-      {/* <div className="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 gap-x-20 lg:flex lg:px-8 lg:py-40">
-        <div className="lg:w-3/5 py-10 h-full">
-          <div className="">
-            <a href="#" className="inline-flex space-x-6">
-              <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
-                Qui suis-je ?
-              </span>
-            </a>
-          </div>
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Pationner du <span className="text-indigo-500">code</span> et du
-            design
-          </h1>
-          <p className="mt-6 sm:text-lg text-base leading-7 text-gray-300">
-            Je suis un développeur fullstack et UX/UI designer fort de plus de 3
-            ans d&apos;expérience. Ma polyvalence et mon sens de l&apos;écoute
-            me permettent de m&apos;adapter rapidement à tout défi, tandis que
-            ma facilité à travailler en équipe favorise une collaboration
-            dynamique. Passionné par la fusion du développement et du design, je
-            m&apos;efforce d&apos;apporter des solutions innovantes et
-            esthétiques à chaque projet. Découvrez mes compétences variées et
-            mes réalisations, et n&apos;hésitez pas à me contacter pour discuter
-            de notre prochaine collaboration !
-          </p>
-          <div className="mt-10 flex items-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md flex items-center gap-1 bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M6.5 20q-2.275 0-3.887-1.575T1 14.575q0-1.95 1.175-3.475T5.25 9.15q.575-2.025 2.138-3.4T11 4.075v8.075L9.4 10.6L8 12l4 4l4-4l-1.4-1.4l-1.6 1.55V4.075q2.575.35 4.288 2.313T19 11q1.725.2 2.863 1.488T23 15.5q0 1.875-1.312 3.188T18.5 20z"
-                ></path>
-              </svg>
-              Mon CV
-            </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
-              Me contacter <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-        <div className="lg:w-2/5 h-full">
-          <div className="flex-none">
-            <img
-              src="./assets/profil-github.png"
-              alt="App screenshot"
-              width={2432}
-              height={1442}
-              className="w-[76rem] aspect-[2/2] lg:aspect-[2/3] object-cover h-full rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
-            />
-          </div>
-        </div>
-      </div> */}
       <div className="mx-auto flex max-w-2xl flex-col gap-16 px-6 py-16 ring- sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
         <div className="lg:w-3/5 py-10 h-full">
           <a href="#" className="inline-flex space-x-6">
