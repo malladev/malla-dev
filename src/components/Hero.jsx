@@ -18,7 +18,7 @@ function Hero() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl sm:py-20 py-10 px-10">
+        <div className="mx-auto max-w-2xl sm:py-20 py-10 sm:px-10">
           <div className="mb-2 flex items-center justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
               Bonjour, Je suis{" "}
@@ -28,7 +28,7 @@ function Hero() {
               </a>
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-center sm:px-0 px-5">
             <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-indigo-500 to-gray-200 inline-block text-transparent bg-clip-text sm:text-5xl">
               Développeur Fullstack <br /> UX UI designer
             </h1>

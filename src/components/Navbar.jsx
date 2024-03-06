@@ -81,7 +81,7 @@ function Navbar() {
         </div>
       </div>
       {mobileMenu && (
-          <div className="bg-gray-900 md:hidden absolute inset-0 z-50 p-4 w-full h-full">
+          <div className="bg-gray-900 md:hidden flex flex-col absolute inset-0 z-50 p-4 w-full h-full">
             {/* Close menu button */}
             <div className="flex justify-end">
               <svg
@@ -113,7 +113,7 @@ function Navbar() {
                 </span>
                 <hr className="border-gray-500 w-full my-2" />
               </div>
-              <div className="flex flex-col items-center font-medium justify-center gap-y-16 text-gray-200 text-lg">
+              <div className="flex flex-col items-center font-medium justify-center gap-y-10 text-gray-200 text-base">
                 {navlinks.map((nav) => (
                   <a key={nav.id} href={nav.href}>
                     {nav.name}
