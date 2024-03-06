@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Layout from "./Layout";
 
 export const navlinks = [
-  { id: 1, name: "About", href: "#about" },
-  { id: 2, name: "My Skills", href: "#skills" },
-  { id: 3, name: "Projects", href: "#project" },
-  { id: 4, name: "Contact", href: "#contact" },
+  { id: 1, name: "A propos de moi", href: "#about" },
+  { id: 2, name: "Mes compétences", href: "#skills" },
+  { id: 3, name: "Mes projets", href: "#project" },
+  { id: 4, name: "Contacts", href: "#contact" },
 ];
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -20,17 +20,17 @@ function Navbar() {
             src="https://media.licdn.com/dms/image/D4E03AQGMXtZcr36BUQ/profile-displayphoto-shrink_400_400/0/1692014566546?e=1715212800&v=beta&t=ss-VGeqzzTOvHbBPqprk8whJV2stL2XFiNGiMTolz0M"
             alt="Profil Photo"
           />
-          <span className="leading-4 font-semibold bg-gradient-to-r from-green-200 to-gray-400 inline-block text-transparent bg-clip-text">
+          <span className="leading-4 font-semibold bg-gradient-to-r from-indigo-300 to-gray-200 inline-block text-transparent bg-clip-text">
             Malla <br />
             DEV{" "}
           </span>
         </div>
-        <div className="flex items-center gap-x-20">
+        <div className="flex items-center lg:gap-x-16 md:gap-x-10">
           {navlinks.map((nav) => (
             <a
               key={nav.id}
               href={nav.href}
-              className="text-gray-300 font-medium hover:border-b-2 hover:border-b-green-500 hover:text-green-500 transition-all duration-300 hover:scale-105"
+              className="text-gray-300 font-medium hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500 transition-all duration-300 hover:scale-105"
             >
               {nav.name}
             </a>
@@ -52,7 +52,7 @@ function Navbar() {
       </div>
 
       {/* Mobile and ipad navbar */}
-      <div className="lg:hidden relative">
+      <div className="lg:hidden relative p-2">
         <div className="flex items-center gap-5 justify-between">
           <div className="flex items-center gap-2">
             <img
@@ -81,7 +81,7 @@ function Navbar() {
         </div>
       </div>
       {mobileMenu && (
-          <div className="bg-gray-900 absolute inset-0 z-50 p-4 w-full h-full">
+          <div className="bg-gray-900 md:hidden absolute inset-0 z-50 p-4 w-full h-full">
             {/* Close menu button */}
             <div className="flex justify-end">
               <svg
@@ -113,7 +113,7 @@ function Navbar() {
                 </span>
                 <hr className="border-gray-500 w-full my-2" />
               </div>
-              <div className="flex flex-col items-center font-medium justify-center gap-y-16 text-gray-200 text-xl ">
+              <div className="flex flex-col items-center font-medium justify-center gap-y-16 text-gray-200 text-lg">
                 {navlinks.map((nav) => (
                   <a key={nav.id} href={nav.href}>
                     {nav.name}

@@ -23,6 +23,7 @@
         "no-warning-comments": 0,
         "react/react-in-jsx-scope": "off",
         "no-useless-escape": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "jsx-a11y/img-redundant-alt":"off"
     }
 }
