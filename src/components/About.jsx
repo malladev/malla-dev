@@ -1,8 +1,9 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import Layout from "./Layout";
 
 export default function About() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900">
+    <div id="about" className="relative isolate overflow-hidden bg-gray-900">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)]"
         aria-hidden="true"
@@ -44,57 +45,63 @@ export default function About() {
           }}
         />
       </div>
-      <div className="mx-auto flex max-w-2xl flex-col gap-16 px-6 py-16 ring- sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-        <div className="lg:w-3/5 py-10 h-full">
-          <a href="#" className="inline-flex space-x-6">
-            <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
-              Qui suis-je ?
-            </span>
-          </a>
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Pationner du{" "}
-            <span className="bg-gradient-to-r from-indigo-500 to-gray-200 inline-block text-transparent bg-clip-text">code et du design</span>
-          </h1>
-          <p className="mt-6 sm:text-lg text-base leading-7 text-gray-300">
-            Je suis un développeur fullstack et UX/UI designer fort de plus de 3
-            ans d&apos;expérience. Ma polyvalence et mon sens de l&apos;écoute
-            me permettent de m&apos;adapter rapidement à tout défi, tandis que
-            ma facilité à travailler en équipe favorise une collaboration
-            dynamique. Passionné par la fusion du développement et du design, je
-            m&apos;efforce d&apos;apporter des solutions innovantes et
-            esthétiques à chaque projet. Découvrez mes compétences variées et
-            mes réalisations, et n&apos;hésitez pas à me contacter pour discuter
-            de notre prochaine collaboration !
-          </p>
-          <div className="mt-10 flex items-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md flex items-center gap-1 bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
+      <Layout>
+        <div className="flex mx-auto max-w-2xl flex-col gap-16 pt-16 ring- lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:pt-20">
+          <div className="lg:w-3/5 py-10 h-full">
+            <a href="#" className="inline-flex space-x-6">
+              <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
+                About me
+              </span>
+            </a>
+            <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              passionate of{" "}
+              <span className="bg-gradient-to-r from-indigo-500 to-gray-200 inline-block text-transparent bg-clip-text">
+                code and design
+              </span>
+            </h1>
+            <p className="mt-6 sm:text-lg text-base leading-7 text-gray-300">
+              I am a fullstack developer and UX/UI designer with over 3 years of
+              experience. My versatility and sense of listening allow me to
+              quickly adapt to any challenge, while my ability to work in a team
+              encourages dynamic collaboration. Passionate about the fusion of
+              development and design, I strive to bring innovative and aesthetic
+              solutions to each project. Discover my varied skills and
+              achievements, and do not hesitate to contact me to discuss our
+              next collaboration!
+            </p>
+            <div className="mt-10 flex items-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md flex items-center gap-1 bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:duration-500 hover:transition-all hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
-                <path
-                  fill="currentColor"
-                  d="M6.5 20q-2.275 0-3.887-1.575T1 14.575q0-1.95 1.175-3.475T5.25 9.15q.575-2.025 2.138-3.4T11 4.075v8.075L9.4 10.6L8 12l4 4l4-4l-1.4-1.4l-1.6 1.55V4.075q2.575.35 4.288 2.313T19 11q1.725.2 2.863 1.488T23 15.5q0 1.875-1.312 3.188T18.5 20z"
-                ></path>
-              </svg>
-              Mon CV
-            </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
-              Me contacter <span aria-hidden="true">→</span>
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.5 20q-2.275 0-3.887-1.575T1 14.575q0-1.95 1.175-3.475T5.25 9.15q.575-2.025 2.138-3.4T11 4.075v8.075L9.4 10.6L8 12l4 4l4-4l-1.4-1.4l-1.6 1.55V4.075q2.575.35 4.288 2.313T19 11q1.725.2 2.863 1.488T23 15.5q0 1.875-1.312 3.188T18.5 20z"
+                  ></path>
+                </svg>
+                My CV
+              </a>
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-white hover:text-indigo-500 hover:border hover:border-indigo-500 hover:rounded hover:px-3 hover:py-1.5 hover:duration-500 hover:transition-all"
+              >
+                Contact me <span aria-hidden="true">→</span>
+              </a>
+            </div>
           </div>
+          <img
+            className="w-full flex-none rounded-2xl object-cover shadow-xl lg:h-full lg:aspect-auto sm:aspect-square lg:max-w-sm"
+            src="./assets/profil.jpg"
+            alt="Profil Photo"
+          />
         </div>
-        <img
-          className="w-full flex-none rounded-2xl object-cover shadow-xl lg:h-full lg:aspect-auto sm:aspect-square lg:max-w-sm"
-          src="./assets/profil.jpg"
-          alt="Profil Photo"
-        />
-      </div>
+      </Layout>
     </div>
   );
 }
