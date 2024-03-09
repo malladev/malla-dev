@@ -48,13 +48,13 @@ export default function About() {
       <Layout>
         <div className="flex mx-auto max-w-2xl flex-col gap-16 pt-16 ring- lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:pt-20">
           <div className="lg:w-3/5 py-10 h-full">
-            <a href="#" className="inline-flex space-x-6">
+            <div className="inline-flex space-x-6">
               <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
                 About me
               </span>
-            </a>
+            </div>
             <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              passionate of{" "}
+              Passionate of{" "}
               <span className="bg-gradient-to-r from-indigo-500 to-gray-200 inline-block text-transparent bg-clip-text">
                 code and design
               </span>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export const navlinks = [
   { id: 1, name: "About me", href: "#about" },
-  { id: 2, name: "Technologies", href: "#skills" },
+  { id: 2, name: "Technologies", href: "#tech" },
   { id: 3, name: "Services", href: "#service" },
   { id: 4, name: "Projects", href: "#project" },
   { id: 5, name: "Contacts", href: "#contact" },
@@ -90,7 +90,10 @@ function Navbar() {
                   behavior: "smooth", // Active l'animation de défilement
                 });
               }}
-              className={`${activeMenu === nav.href && 'border-b-2 border-b-indigo-500 text-indigo-500'} text-gray-300 font-medium hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500 transition-all duration-300 hover:scale-105`}
+              className={`${
+                activeMenu === nav.href &&
+                "border-b-2 border-b-indigo-500 text-indigo-500"
+              } text-gray-300 font-medium hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500 transition-all duration-300 hover:scale-105`}
             >
               {nav.name}
             </a>
@@ -130,6 +133,18 @@ function Navbar() {
       </div>
       {mobileMenu && (
         <div className="h-full min-h-full z-50 bg-gray-900 absolute inset-0 p-5">
+          <div
+              className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-80"
+              aria-hidden="true"
+            >
+              <div
+                className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                style={{
+                  clipPath:
+                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                }}
+              />
+            </div>
           {/* Close menu button */}
           <div className="flex justify-end">
             <svg
@@ -149,7 +164,7 @@ function Navbar() {
           </div>
           {/* END */}
 
-          <div className="flex flex-col items-center gap-5 justify-center">
+          <div className="flex flex-col items-center gap-5 justify-center overflow-y-auto">
             {/* User */}
             <div className="flex w-full px-10 flex-col mt-5 items-center gap-2">
               <img
@@ -160,9 +175,9 @@ function Navbar() {
               <span className="leading-4 mt-1 text-2xl font-semibold bg-gradient-to-r from-indigo-200 to-gray-400 inline-block text-transparent bg-clip-text">
                 Malla DEV{" "}
               </span>
-              <hr className="border-gray-500 w-full my-2" />
+              <hr className="border-gray-500 w-full my-2 md:mt-10" />
             </div>
-            <div className="flex flex-col items-center font-medium justify-center md:gap-y-24 gap-y-16 text-gray-200 text-base">
+            <div className="flex flex-col items-center font-medium justify-center md:gap-y-24 sm:gap-y-20 gap-y-14 overflow-y-auto text-gray-200 text-base">
               {navlinks.map((nav) => (
                 <a
                   key={nav.id}

@@ -12,9 +12,9 @@ export default function MySkills() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-10 bg-gradient-to-r hover:text-indigo-500 hover:duration-500 hover:transition-colors  from-white to-indigo-500 text-transparent bg-clip-text py-4 text-center text-4xl font-bold tracking-tight md:text-6xl"
+        className="mt-10 hover:text-indigo-500 hover:duration-500 hover:transition-colors text-white py-4 text-center text-4xl font-bold tracking-tight md:text-6xl"
       >
-        Technologies daily <br /> mastered
+        Technologies <span className="from-indigo-500 bg-gradient-to-r to-slate-200 text-transparent bg-clip-text">daily <br /> mastered</span> 
       </motion.h1>
       <Layout>
         <div className="md:mt-20 mt-5">
@@ -31,9 +31,9 @@ export default function MySkills() {
                 }}
               />
             </div>
-            <div className="grid grid-cols-1 items-start gap-x-8 gap-y-16 md:grid-cols-2">
+            <div className="grid grid-cols-1 items-start gap-x-8 gap-y-16 lg:grid-cols-2">
               <div className="mx-auto w-full lg:mx-0">
-                <h2 className="text-3xl font-medium tracking-tight text-white">
+                <h2 className="text-3xl font-semibold tracking-tight text-white">
                   Here is an overview of the <span className="text-indigo-500">technologies</span>  I use regularly
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
@@ -42,7 +42,7 @@ export default function MySkills() {
                   harmoniously converge to give life to my projects.
                 </p>
               </div>
-              <div className="mx-auto grid w-full grid-cols-2 sm:gap-x-10 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
+              <div className="mx-auto grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-2 sm:gap-x-10 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
                 {tech.map((t) => (
                   <div key={t.name} className="flex items-center gap-2">
                     <img
