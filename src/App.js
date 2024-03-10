@@ -1,4 +1,5 @@
 import About from "./components/About.jsx";
+import { Contact } from "./components/Contact.tsx";
 import Hero from "./components/Hero.jsx";
 import MySkills from "./components/MySkills.jsx";
 import Navbar from "./components/Navbar.jsx";
@@ -16,6 +17,7 @@ function App() {
       <MySkills />
       <Service />
       <Projects />
+      <Contact />
     </div>
   );
 }
