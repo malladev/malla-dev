@@ -107,7 +107,7 @@ export default function Service() {
               ))}
             </ul>
             <a
-              href={tier.href}
+              href="#contact"
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
