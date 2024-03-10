@@ -88,7 +88,7 @@ export default function About() {
                 My CV
               </a>
               <a
-                href="#"
+                href="#contact"
                 className="text-sm font-semibold leading-6 text-white hover:text-indigo-500 hover:border hover:border-indigo-500 hover:rounded hover:px-3 hover:py-1.5 hover:duration-500 hover:transition-all"
               >
                 Contact me <span aria-hidden="true">→</span>

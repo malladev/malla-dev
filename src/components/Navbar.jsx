@@ -9,7 +9,6 @@ export const navlinks = [
 ];
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [activeMenu, setActiveMenu] = useState("");
 
   useEffect(() => {
     const sectionActive = new IntersectionObserver(
@@ -17,7 +16,6 @@ function Navbar() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.id;
-            setActiveMenu(id);
           }
         });
       },
@@ -85,15 +83,11 @@ function Navbar() {
               href={nav.href}
               onClick={(e) => {
                 e.preventDefault(); // Empêche le comportement par défaut du lien
-                setActiveMenu(nav.href);
                 document.getElementById(nav.href.substring(1)).scrollIntoView({
                   behavior: "smooth", // Active l'animation de défilement
                 });
               }}
-              className={`${
-                activeMenu === nav.href &&
-                "border-b-2 border-b-indigo-500 text-indigo-500"
-              } text-gray-300 font-medium hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500 transition-all duration-300 hover:scale-105`}
+              className={`text-gray-300 font-medium hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500 transition-all duration-300 hover:scale-105`}
             >
               {nav.name}
             </a>
@@ -184,7 +178,6 @@ function Navbar() {
                   href={nav.href}
                   onClick={(e) => {
                     e.preventDefault(); // Empêche le comportement par défaut du lien
-                    setActiveMenu(nav.href);
                     document
                       .getElementById(nav.href.substring(1))
                       .scrollIntoView({
