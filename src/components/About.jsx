@@ -60,7 +60,7 @@ export default function About() {
               </span>
             </h1>
             <p className="mt-6 sm:text-lg text-base leading-7 text-gray-300">
-              I am a fullstack developer and UX/UI designer with over 3 years of
+              I am a Junior fullstack developer and UX/UI designer with over 3 years of
               experience. My versatility and sense of listening allow me to
               quickly adapt to any challenge, while my ability to work in a team
               encourages dynamic collaboration. Passionate about the fusion of
