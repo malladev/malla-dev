@@ -42,7 +42,7 @@ const BackToTopButton = () => {
                     padding: "10px",
                     borderRadius: "100%",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                    zIndex: "10",
+                    zIndex: "50",
                 }}
             >
                 <ArrowUpIcon className="w-5 text-white" />

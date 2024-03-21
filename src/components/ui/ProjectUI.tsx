@@ -78,10 +78,10 @@ export const Card = ({
                 className
             )}
         >
-            <div className="relative z-50">
+            <div className="relative z-30">
                 <div className="p-4">{children}</div>
             </div>
-            <a href="#" className="absolute top-3 z-50 right-3 bg-indigo-400 rounded-lg p-1">
+            <a href="#" className="absolute top-3 z-30 right-3 bg-indigo-400 rounded-lg p-1">
                 <ArrowUpRightIcon className="w-4 text-white" />
             </a>
         </div>

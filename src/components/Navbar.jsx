@@ -59,7 +59,7 @@ function Navbar() {
   }, [mobileMenu]);
 
   return (
-    <div className="w-full mx-auto max-w-5xl">
+    <div className="w-full mx-auto max-w-5xl bg-transparent">
       {/* Destop navbar */}
       <div className="hidden relative  w-full p-4 gap-5 lg:flex items-center justify-between">
         <a
@@ -67,14 +67,10 @@ function Navbar() {
           className="flex items-center gap-2 cursor-pointer hover:duration-500 hover:transition-transform hover:scale-110"
         >
           <img
-            className="rounded-full w-10 object-cover"
-            src="https://media.licdn.com/dms/image/D4E03AQGMXtZcr36BUQ/profile-displayphoto-shrink_400_400/0/1692014566546?e=1715212800&v=beta&t=ss-VGeqzzTOvHbBPqprk8whJV2stL2XFiNGiMTolz0M"
+            className="rounded-full w-44 object-cover"
+            src="./assets/favicon.png"
             alt="Profil Photo"
           />
-          <span className="leading-4 font-semibold bg-gradient-to-r from-indigo-300 to-gray-200 inline-block text-transparent bg-clip-text">
-            Malla <br />
-            DEV{" "}
-          </span>
         </a>
         <div className="flex items-center lg:gap-x-16 md:gap-x-10">
           {navlinks.map((nav) => (
@@ -100,14 +96,10 @@ function Navbar() {
         <div className="flex items-center gap-5 justify-between">
           <div className="flex items-center gap-2">
             <img
-              className="rounded-full w-10 object-cover"
-              src="https://media.licdn.com/dms/image/D4E03AQGMXtZcr36BUQ/profile-displayphoto-shrink_400_400/0/1692014566546?e=1715212800&v=beta&t=ss-VGeqzzTOvHbBPqprk8whJV2stL2XFiNGiMTolz0M"
+              className="rounded-full w-32 object-cover"
+              src="./assets/favicon.png"
               alt="Profil Photo"
             />
-            <span className="leading-4 font-semibold bg-gradient-to-r from-indigo-200 to-gray-400 inline-block text-transparent bg-clip-text">
-              Malla <br />
-              DEV{" "}
-            </span>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +118,7 @@ function Navbar() {
         </div>
       </div>
       {mobileMenu && (
-        <div className="h-full min-h-full z-50 bg-gray-900 absolute inset-0 p-5">
+        <div className="h-screen z-[999] bg-gray-900 absolute inset-0 p-5">
           <div
               className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-80"
               aria-hidden="true"
@@ -162,13 +154,10 @@ function Navbar() {
             {/* User */}
             <div className="flex w-full px-10 flex-col mt-5 items-center gap-2">
               <img
-                className="rounded-full w-20 object-cover"
-                src="https://media.licdn.com/dms/image/D4E03AQGMXtZcr36BUQ/profile-displayphoto-shrink_400_400/0/1692014566546?e=1715212800&v=beta&t=ss-VGeqzzTOvHbBPqprk8whJV2stL2XFiNGiMTolz0M"
+                className="rounded-full w-44 object-cover"
+                src="./assets/favicon.png"
                 alt="Profil Photo"
               />
-              <span className="leading-4 mt-1 text-2xl font-semibold bg-gradient-to-r from-indigo-200 to-gray-400 inline-block text-transparent bg-clip-text">
-                Malla DEV{" "}
-              </span>
               <hr className="border-gray-500 w-full my-2 md:mt-10" />
             </div>
             <div className="flex flex-col items-center font-medium justify-center md:gap-y-24 sm:gap-y-20 gap-y-14 overflow-y-auto text-gray-200 text-base">

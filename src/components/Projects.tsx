@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function Projects() {
     return (
-        <div id="project" className="max-w-5xl mx-auto px-8">
+        <div id="project" className="max-w-5xl mx-auto mt-20">
             <motion.h1
                 initial={{ opacity: 0.5, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
