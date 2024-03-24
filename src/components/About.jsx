@@ -5,24 +5,31 @@ import { IconEqual } from "@tabler/icons-react";
 export default function About() {
   return (
     <div id="about" className="relative isolate overflow-hidden py-20">
-      
-      <div className="md:flex hidden item-center -rotate-12 -left-6 gap-1 top-[40%] absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+      <div className="md:flex -z-10 hidden item-center -rotate-12 -left-6 gap-1 top-[40%] absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
         <div className="md:py-1 py-0 px-6 bg-blue-200"></div>
-        <h1 className="text-gray-400 md:text-base text-xs">UX / UI <br /> Designer</h1>
+        <h1 className="text-gray-400 md:text-base text-xs">
+          UX / UI <br /> Designer
+        </h1>
       </div>
-      <div className="md:flex hidden item-center -rotate-12 -left-6 top-[60%] gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+      <div className="md:flex -z-10 hidden item-center -rotate-12 -left-6 top-[60%] gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
         <div className="md:py-1 py-0 px-6 bg-indigo-400"></div>
-        <h1 className="text-gray-400 md:text-base text-xs">Graphic <br /> Designer</h1>
+        <h1 className="text-gray-400 md:text-base text-xs">
+          Graphic <br /> Designer
+        </h1>
       </div>
-      <div className="md:flex hidden item-center rotate-12 flex-row-reverse top-[40%] text-right -right-6 gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+      <div className="md:flex -z-10 hidden item-center rotate-12 flex-row-reverse top-[40%] text-right -right-6 gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
         <div className="md:py-1 py-0 px-6 bg-yellow-200"></div>
-        <h1 className="text-gray-400 md:text-base text-xs">Web <br /> Developer</h1>
+        <h1 className="text-gray-400 md:text-base text-xs">
+          Web <br /> Developer
+        </h1>
       </div>
-      <div className="md:flex hidden item-center flex-row-reverse text-right rotate-12 -right-6 top-[60%] gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+      <div className="md:flex -z-10 hidden item-center flex-row-reverse text-right rotate-12 -right-6 top-[60%] gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
         <div className="md:py-1 py-0 px-6 bg-green-400"></div>
-        <h1 className="text-gray-400 md:text-base text-xs">Mobile <br /> Developer</h1>
+        <h1 className="text-gray-400 md:text-base text-xs">
+          Mobile <br /> Developer
+        </h1>
       </div>
-      <div className="absolute h-full w-full flex justify-center items-start -top-8">
+      <div className="absolute h-full -z-10 w-full flex justify-center items-start -top-8">
         <img
           src="./triangle-down.svg"
           alt="triangle-down"
@@ -43,20 +50,20 @@ export default function About() {
       </div>
       <Layout>
         {/* Statistique */}
-        <div className="flex sm:flex-row flex-col items-center justify-center md:gap-20 gap-5">
-          <div className="md:w-56 md:h-60 w-full h-44 px-5 text-center border-4 flex flex-col items-center justify-center gap-3 border-green-500 bg-green-100 border-dashed rounded-lg">
+        <div className="flex sm:flex-row flex-col items-center justify-center md:gap-10 lg:gap-32 gap-5">
+          <div className="md:h-60 w-full h-44 px-5 text-center border-4 flex flex-col items-center justify-center gap-3 border-green-500 bg-green-100 border-dashed rounded-lg">
             <span className="md:text-6xl sm:text-4xl text-6xl font-semibold text-gray-700 tracking-tighter">
               2+
             </span>
             <h4 className="text-xl text-gray-700">years of experience</h4>
           </div>
-          <div className="md:w-56 md:h-60 w-full h-44 px-5 text-center border-4 flex flex-col items-center justify-center gap-3 border-blue-500 bg-blue-200 border-dashed rounded-lg">
+          <div className="md:h-60 w-full h-44 px-5 text-center border-4 flex flex-col items-center justify-center gap-3 border-blue-500 bg-blue-200 border-dashed rounded-lg">
             <span className="md:text-6xl sm:text-4xl text-6xl font-semibold text-gray-700 tracking-tighter">
               20+
             </span>
             <h4 className="text-xl text-gray-700">accomplishments</h4>
           </div>
-          <div className="md:w-56 md:h-60 w-full h-44 px-5 text-center border-4 flex flex-col items-center justify-center gap-3 border-yellow-500 bg-yellow-100 border-dashed rounded-lg">
+          <div className="md:h-60 w-full h-44 px-5 text-center border-4 flex flex-col items-center justify-center gap-3 border-yellow-500 bg-yellow-100 border-dashed rounded-lg">
             <span className="md:text-6xl sm:text-4xl text-6xl font-semibold text-gray-700 tracking-tighter">
               30+
             </span>

@@ -10,7 +10,7 @@ export function Projects() {
                 <img src="./triangle-down.svg" alt="triangle-down" className="w-20 white-icon" />
             </div>
 
-            <div id="project" className="max-w-5xl  mx-auto mt-20 lg:p-0 px-5">
+            <div id="project" className="max-w-5xl z-50 mx-auto mt-20 lg:p-0 px-5">
                 <motion.h1
                     initial={{ opacity: 0.5, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}

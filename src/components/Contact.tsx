@@ -12,7 +12,7 @@ const contacts = [
 export function Contact() {
     return (
         <div className="relative">
-            <div className="absolute h-full w-full flex justify-center items-start -top-8">
+            <div className="absolute h-full -z-10 w-full flex justify-center items-start -top-8">
                 <img
                     src="./triangle-down.svg"
                     alt="triangle-down"
