@@ -1,12 +1,12 @@
 import React from "react";
 import { InfiniteScroll } from "./ui/InfiniteScroll.tsx";
 
-export function TechScroll() {
+export function TechScrollLeft() {
     return (
         <div className="flex flex-col antialiased items-center justify-center relative overflow-hidden">
             <InfiniteScroll
                 items={tech}
-                direction="right"
+                direction="left"
                 speed="slow"
             />
         </div>

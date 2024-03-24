@@ -58,11 +58,11 @@ export const InfiniteScroll = ({
     const getSpeed = () => {
         if (containerRef.current) {
             if (speed === "fast") {
-                containerRef.current.style.setProperty("--animation-duration", "30s");
-            } else if (speed === "normal") {
                 containerRef.current.style.setProperty("--animation-duration", "40s");
+            } else if (speed === "normal") {
+                containerRef.current.style.setProperty("--animation-duration", "60s");
             } else {
-                containerRef.current.style.setProperty("--animation-duration", "50s");
+                containerRef.current.style.setProperty("--animation-duration", "70s");
             }
         }
     };
@@ -84,11 +84,7 @@ export const InfiniteScroll = ({
             >
                 {items.map((item, idx) => (
                     <li
-                        className="max-w-full relative rounded-lg border border-b-0 flex-shrink-0 border-slate-700 px-8 py-2"
-                        style={{
-                            background:
-                                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-                        }}
+                        className="max-w-full relative rounded-lg border border-b-0 flex-shrink-0 px-8 py-2"
                         key={item.name}
                     >
                         <div>
@@ -98,8 +94,8 @@ export const InfiniteScroll = ({
                             ></div>
                             <div className="flex items-center justify-center gap-2">
 
-                                <img src={item.picture} alt={item.name} className="w-8" />
-                                <span className=" relative z-20 text-lg font-semibold leading-[1.6] text-slate-700">
+                                <img src={item.picture} alt={item.name} className="w-8 white-icon" />
+                                <span className=" relative z-20 text-lg font-semibold leading-[1.6] text-white">
                                     {item.name}
                                 </span>
                             </div>
