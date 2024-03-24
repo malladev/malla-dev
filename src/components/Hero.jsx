@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { TechScroll } from "./TechScroll.tsx";
+import { TechScrollLeft } from "./TechScrollLeft.tsx";
 
 function Hero() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col overflow-hidden">
+      <div className="flex flex-col bg-gray-950 relative overflow-hidden">
         <div className="relative isolate overflow-hidden">
           <div
             className="absolute bottom-10 inset-x-0  -z-10 transform-gpu overflow-hidden blur-3xl"
@@ -97,6 +99,9 @@ function Hero() {
             />
           </div>
         </div>
+
+        <TechScroll />
+        <TechScrollLeft />
       </div>
     </>
   );

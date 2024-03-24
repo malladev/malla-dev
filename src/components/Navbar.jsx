@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 
 export const navlinks = [
   { id: 1, name: "About me", href: "#about" },
-  { id: 2, name: "Technologies", href: "#tech" },
-  { id: 3, name: "Services", href: "#service" },
   { id: 4, name: "Projects", href: "#project" },
   { id: 5, name: "Contacts", href: "#contact" },
 ];
@@ -59,9 +57,9 @@ function Navbar() {
   }, [mobileMenu]);
 
   return (
-    <div className="w-full mx-auto max-w-5xl bg-transparent">
+    <div className="w-full bg-gray-950 mx-auto">
       {/* Destop navbar */}
-      <div className="hidden relative  w-full p-4 gap-5 lg:flex items-center justify-between">
+      <div className="hidden relative max-w-6xl mx-auto  w-full p-4 gap-5 lg:flex items-center justify-between">
         <a
           href="/"
           className="flex items-center gap-2 cursor-pointer hover:duration-500 hover:transition-transform hover:scale-110"

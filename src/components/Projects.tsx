@@ -5,20 +5,26 @@ import { motion } from "framer-motion";
 
 export function Projects() {
     return (
-        <div id="project" className="max-w-5xl mx-auto mt-20">
-            <motion.h1
-                initial={{ opacity: 0.5, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    delay: 0.3,
-                    duration: 0.8,
-                    ease: "easeInOut",
-                }}
-                className=" text-white py-4 text-center text-4xl font-bold tracking-tight md:text-6xl"
-            >
-                My <span className="from-indigo-500 bg-gradient-to-r to-slate-200 text-transparent bg-clip-text">projects</span>
-            </motion.h1>
-            <HoverEffect items={projects} />
+        <div className="bg-gray-900 py-10 relative">
+            <div className="absolute h-full w-full flex justify-center items-start -top-8">
+                <img src="./triangle-down.svg" alt="triangle-down" className="w-20 white-icon" />
+            </div>
+
+            <div id="project" className="max-w-5xl  mx-auto mt-20 lg:p-0 px-5">
+                <motion.h1
+                    initial={{ opacity: 0.5, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                    }}
+                    className=" text-gray-200 py-4 text-center text-4xl font-bold tracking-tight md:text-6xl"
+                >
+                    My <span className="from-indigo-500 bg-gradient-to-r to-gray-200 text-transparent bg-clip-text">projects</span>
+                </motion.h1>
+                <HoverEffect items={projects} />
+            </div>
         </div>
     );
 }

@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: rgb(17 24 39);
+  background-color: white;
 }
 
 ::selection {
@@ -19,4 +19,10 @@ body {
 
 .white-icon {
   filter: brightness(0) invert(1);
+}
+.black-icon {
+  filter: brightness(0);
+}
+.gray-icon {
+  filter: brightness(0.4);
 }
