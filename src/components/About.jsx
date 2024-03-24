@@ -1,10 +1,27 @@
-import { ChevronRightIcon, PlusIcon } from "@heroicons/react/20/solid";
+import { PlusIcon } from "@heroicons/react/20/solid";
 import Layout from "./Layout";
 import { IconEqual } from "@tabler/icons-react";
 
 export default function About() {
   return (
     <div id="about" className="relative isolate overflow-hidden py-20">
+      
+      <div className="md:flex hidden item-center -rotate-12 -left-6 gap-1 top-[40%] absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+        <div className="md:py-1 py-0 px-6 bg-blue-200"></div>
+        <h1 className="text-gray-400 md:text-base text-xs">UX / UI <br /> Designer</h1>
+      </div>
+      <div className="md:flex hidden item-center -rotate-12 -left-6 top-[60%] gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+        <div className="md:py-1 py-0 px-6 bg-indigo-400"></div>
+        <h1 className="text-gray-400 md:text-base text-xs">Graphic <br /> Designer</h1>
+      </div>
+      <div className="md:flex hidden item-center rotate-12 flex-row-reverse top-[40%] text-right -right-6 gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+        <div className="md:py-1 py-0 px-6 bg-yellow-200"></div>
+        <h1 className="text-gray-400 md:text-base text-xs">Web <br /> Developer</h1>
+      </div>
+      <div className="md:flex hidden item-center flex-row-reverse text-right rotate-12 -right-6 top-[60%] gap-1 absolute leading-5 ring-1 ring-gray-200 p-2 rounded">
+        <div className="md:py-1 py-0 px-6 bg-green-400"></div>
+        <h1 className="text-gray-400 md:text-base text-xs">Mobile <br /> Developer</h1>
+      </div>
       <div className="absolute h-full w-full flex justify-center items-start -top-8">
         <img
           src="./triangle-down.svg"

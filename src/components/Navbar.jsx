@@ -116,7 +116,7 @@ function Navbar() {
         </div>
       </div>
       {mobileMenu && (
-        <div className="h-screen z-[999] bg-gray-900 absolute inset-0 p-5">
+        <div className="h-screen z-[999] bg-gray-950 absolute inset-0 p-5">
           <div
               className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-80"
               aria-hidden="true"
