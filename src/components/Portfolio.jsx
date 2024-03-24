@@ -1,63 +1,62 @@
 const featuredTestimonial = {
   body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  photo: "./assets/Presentation maquette.png",
+  alt: "Presentation maquette HUB SCOLAIRE",
+  title: "HUB SCOLAIRE",
   techs: [
-    { name: ["Angular JS"] },
-    { name: ["Tailwind CSS"] },
-    { name: ["Spring Boot"] },
-    { name: ["MySql"] },
+    { name: ["Figma"], color: "bg-blue-400 text-white" },
+    { name: ["Photoshop"], color: "bg-gray-900 text-white" },
+    { name: ["React Native"], color: "bg-blue-600 text-white" },
+    { name: ["Tailwind Css"], color: "bg-indigo-400 text-white" },
   ],
 };
 const testimonials = [
   [
     [
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+        body: "SO SECURIGAZ is a device that aims to preserve and save human lives against domestic accidents due to forgetfulness or gas leakage.",
+        photo: "./assets/Presentation maquette So securigaz.png",
+        alt: "Presentation maquette SO SECURIGAZ",
+        title: "SO SECURIGAZ",
         techs: [
-          { name: ["Angular JS"] },
+          { name: ["Figma"], color: "bg-blue-400 text-white" },
+          { name: ["React Native"], color: "bg-blue-600 text-white" },
+          { name: ["Tailwind Css"], color: "bg-indigo-400 text-white" },
         ],
       },
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+        body: "Road of RAMADAN banner for COJEC.",
+        photo: "./assets/Route de careme COJEC.png",
+        alt: "Route de careme COJEC",
+        title: "BANNER COJEC",
         techs: [
-          { name: ["Angular JS"] },
-          { name: ["MySql"] },
+          { name: ["Photoshop"], color: "bg-gray-900 text-white" }
         ],
       },
-      // More testimonials...
-    ],
-    [
-      {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
-        techs: [
-          { name: ["MySql"] },
-        ],
-      },
+      
       // More testimonials...
     ],
   ],
   [
     [
       {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corruptechs: ",
+        body: "Presentation flyers of FIRM DIGITAL SARL services.",
+        photo: "./assets/FIRM Services.png",
+        alt: "Presentation Service FIRM DIGITAL",
+        title: "FLYERS SERVICES FIRM DIGITAL",
         techs: [
-          { name: ["Spring Boot"] },
-        ],
-      },
-      // More testimonials...
-    ],
-    [
-      {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
-        techs: [
-          { name: ["Spring Boot"] },
-          { name: ["MySql"] },
+          { name: ["Photoshop"], color: "bg-gray-900 text-white" }
         ],
       },
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        body: "FIRM DIGITAL SARL is a dynamic company operating in the digital field.",
+        photo: "./assets/Maquette Firm Digital.png",
+        alt: "Presentation maquette WEB SITE FIRM DIGITAL",
+        title: "WEB SITE FIRM DIGITAL",
         techs: [
-          { name: ["Angular JS"] },
-          { name: ["Tailwind CSS"] },
+          { name: ["Figma"], color: "bg-blue-400 text-white" },
+          { name: ["React Js"], color: "bg-blue-500 text-white" },
+          { name: ["Tailwind Css"], color: "bg-indigo-400 text-white" },
         ],
       },
       // More testimonials...
@@ -102,21 +101,33 @@ export default function Portfolio() {
             Portfolio
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
-          I create applications and UI Design for a lot of company and others.
+            I create applications and UI Design for a lot of company and others.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-            <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
-              <p>{`“${featuredTestimonial.body}”`}</p>
-            </blockquote>
+          <figure className="rounded-2xl lg:mt-10 bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1 relative group">
+            <div className="overflow-hidden">
+              <img
+                src={featuredTestimonial.photo}
+                alt={featuredTestimonial.alt}
+                className="w-full h-full object-cover group-hover:blur-sm transition duration-300"
+              />
+              <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <p className="text-white flex flex-col gap-5 text-center px-4">
+                  <span className="text-xl font-semibold">
+                    {featuredTestimonial.title}
+                  </span>
+                  <span>{featuredTestimonial.body}</span>
+                </p>
+              </div>
+            </div>
             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
               <div className="flex-auto">
-                <div className="font-semibold flex flex-wrap items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   {featuredTestimonial.techs.map((tech) => (
                     <div
                       key={tech.name}
-                      className="bg-slate-400 px-4 py-1 w-fit rounded"
+                      className={`${tech.color} text-xs py-1 font-medium px-4`}
                     >
                       {tech.name}
                     </div>
@@ -145,21 +156,31 @@ export default function Portfolio() {
                   {column.map((testimonial) => (
                     <figure
                       key={testimonial.techs.name}
-                      className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+                      className="rounded-2xl bg-white shadow-lg ring-1 p-6 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1 relative group"
                     >
-                      <blockquote className="text-gray-900">
-                        <p>{`“${testimonial.body}”`}</p>
-                      </blockquote>
+                      <div className="overflow-hidden">
+                        <img
+                          src={testimonial.photo}
+                          alt={testimonial.alt}
+                          className="w-full h-full object-cover group-hover:blur-sm transition duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                          <p className="text-white flex flex-col gap-5 text-center px-4">
+                            <span className="text-xl font-semibold">
+                              {testimonial.title}
+                            </span>
+                            <span className="text-sm">{testimonial.body}</span>
+                          </p>
+                        </div>
+                      </div>
                       <figcaption className="mt-6 flex items-center gap-x-4">
                         <div className="font-light flex flex-wrap items-center gap-2">
-                          {testimonials.map((tech) => (
+                          {testimonial.techs.map((tech) => (
                             <div
-                              key={tech.mame}
-                              className="bg-slate-400 text-xs px-2 py-1 w-fit rounded"
+                              key={tech.name}
+                              className={`${tech.color} text-xs py-1 font-medium px-4`}
                             >
-                              {tech.map((t) => (
-                                <div key={t.name}>{t.name}</div>
-                              ))}
+                              <div>{tech.name}</div>
                             </div>
                           ))}
                         </div>
