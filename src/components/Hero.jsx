@@ -43,8 +43,9 @@ function Hero() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="https://github.com/malladev"
                   target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-1 hover:-translate-y-1 hover:translate-x-1 hover:transition-transform duration-500"
                 >
                   <svg
@@ -64,8 +65,9 @@ function Hero() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/mohamed-lamine-kon%C3%A9-b51999193/"
                   target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-1 hover:-translate-y-1 hover:translate-x-1 hover:transition-transform duration-500"
                 >
                   <svg

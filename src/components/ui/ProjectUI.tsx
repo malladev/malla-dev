@@ -81,9 +81,9 @@ export const Card = ({
             <div className="relative z-30">
                 <div className="p-4">{children}</div>
             </div>
-            <a href="#" className="absolute top-3 z-30 right-3 bg-indigo-400 rounded-lg p-1">
+            <span className="absolute top-3 z-30 right-3 bg-indigo-400 rounded-lg p-1">
                 <ArrowUpRightIcon className="w-4 text-white" />
-            </a>
+            </span>
         </div>
     );
 };
