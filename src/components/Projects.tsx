@@ -32,19 +32,19 @@ export function Projects() {
 export const projects = [
     {
         title: "Assurance Lafia Workflow",
-        description: "A technology company that builds economic infrastructure for the internet.",
+        description: "A robust web application designed to optimize and streamline business processes within your organization.",
         link: "#",
         techs: [{ name: ["Angular JS"] }, { name: ["Tailwind CSS"] }, { name: ["Spring Boot"] }, { name: ["MySql"] }]
     },
     {
         title: "E-Shop",
-        description: "A technology company that builds economic infrastructure for the internet.",
+        description: "This platform was created as part of my learning to master (NEST JS - MongoDB - PRISMA) technologies and build robust and powerful web applications.",
         link: "#",
         techs: [{ name: ["Next JS"] }, { name: ["Tailwind CSS"] }, { name: ["Nest JS"] }, { name: ["MongoDB"] }, { name: ["Prisma"] }]
     },
     {
         title: "Hub Scolaire",
-        description: "A technology company that builds economic infrastructure for the internet.",
+        description: "Mobile application of donation of Textbook",
         link: "#",
         techs: [{ name: ["React Native"] }, { name: ["Tailwind CSS"] }, { name: ["MongoDB"] }]
     }
