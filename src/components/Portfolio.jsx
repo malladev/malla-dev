@@ -16,9 +16,18 @@ const ProjectCard = memo(({ project }) => (
         className="w-full h-full object-cover group-hover:blur-sm transition duration-300"
       />
       <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-        <p className="text-white flex flex-col gap-5 text-center px-4">
+        <p className="text-white flex flex-col items-center justify-center gap-5 text-center px-4">
           <span className="text-xl font-semibold">{project.title}</span>
           <span>{project.body}</span>
+          {
+            project.type === "figma" &&
+            <a
+              href={project.href} target="_blank" rel="noreferrer"
+              className="text-sm font-semibold bg-indigo-500 text-white px-4 py-2 w-fit rounded-full hover:bg-indigo-600"
+            >
+              view
+            </a>
+          }
         </p>
       </div>
     </div>
@@ -36,7 +45,9 @@ const firstProject = {
   body: "The TONBA application aims to simplify management of tontines for managers by offering an intuitive interface, rigorous payment tracking and automated notifications.",
   photo: "./assets/Presentation TONBA.webp",
   alt: "Presentation maquette TONBA",
+  type: "figma",
   title: "TONBA",
+  href: "https://www.figma.com/design/t8nBvX1Cbdv8CiADXTNBmh/Tonba-Project?node-id=49-219&t=taAnE1XmTWWmtXaS-1",
   techs: [
     { id: 1, name: ["Figma"], color: "bg-blue-400 text-white" },
     { id: 3, name: ["React Native"], color: "bg-blue-600 text-white" },
@@ -52,6 +63,8 @@ const projects = [
         photo: "./assets/Presentation maquette.png",
         alt: "Presentation maquette HUB SCOLAIRE",
         title: "HUB SCOLAIRE",
+        href: "https://www.figma.com/design/NHsQZb0WGrWq9n8I9V1KmY/Hub-Projects?node-id=0-1&t=fc6NPTXRCjLxIYEM-1",
+        type: "figma",
         techs: [
           { id: 1, name: ["Figma"], color: "bg-blue-400 text-white" },
           { id: 2, name: ["Photoshop"], color: "bg-gray-900 text-white" },
@@ -64,6 +77,8 @@ const projects = [
         photo: "./assets/Presentation maquette So securigaz.png",
         alt: "Presentation maquette SO SECURIGAZ",
         title: "SO SECURIGAZ",
+        href: "https://www.figma.com/design/WK7yy83bVnJiMh7tVeRj00/SO-SECURIGAZ-APP-MOBILE?node-id=0-1&t=JmPv0BTkwJuZmbqg-1",
+        type: "figma",
         techs: [
           { name: ["Figma"], color: "bg-blue-400 text-white" },
           { name: ["React Native"], color: "bg-blue-600 text-white" },
@@ -74,6 +89,7 @@ const projects = [
         body: "Road of RAMADAN banner for COJEC.",
         photo: "./assets/Route de careme COJEC.png",
         alt: "Route de careme COJEC",
+        type: "photoshop",
         title: "BANNER COJEC",
         techs: [
           { name: ["Photoshop"], color: "bg-gray-900 text-white" }
@@ -87,6 +103,7 @@ const projects = [
         body: "Presentation flyers of FIRM DIGITAL SARL services.",
         photo: "./assets/FIRM Services.png",
         alt: "Presentation Service FIRM DIGITAL",
+        type: "photoshop",
         title: "FLYERS SERVICES FIRM DIGITAL",
         techs: [
           { name: ["Photoshop"], color: "bg-gray-900 text-white" }
@@ -96,7 +113,9 @@ const projects = [
         body: "FIRM DIGITAL SARL is a dynamic company operating in the digital field.",
         photo: "./assets/Maquette Firm Digital.png",
         alt: "Presentation maquette WEB SITE FIRM DIGITAL",
+        type: "figma",
         title: "WEBSITE FIRM DIGITAL",
+        href: "https://www.figma.com/design/J6MWSoDjoJa1D2LBZyWtQE/FIRM-DIGITAL-LANDING-PAGE?node-id=0-1&t=OPrJxT9qpBXclRrD-1",
         techs: [
           { name: ["Figma"], color: "bg-blue-400 text-white" },
           { name: ["React Js"], color: "bg-blue-500 text-white" },
