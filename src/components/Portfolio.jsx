@@ -60,7 +60,7 @@ const projects = [
     [
       {
         body: "Integer id nunc sit semper purus...",
-        photo: "./assets/Presentation maquette.png",
+        photo: "./assets/Presentation maquette.webp",
         alt: "Presentation maquette HUB SCOLAIRE",
         title: "HUB SCOLAIRE",
         href: "https://www.figma.com/design/NHsQZb0WGrWq9n8I9V1KmY/Hub-Projects?node-id=0-1&t=fc6NPTXRCjLxIYEM-1",
@@ -74,7 +74,7 @@ const projects = [
       },
       {
         body: "SO SECURIGAZ is a device that aims to preserve and save human lives against domestic accidents due to forgetfulness or gas leakage.",
-        photo: "./assets/Presentation maquette So securigaz.png",
+        photo: "./assets/Presentation maquette So securigaz.webp",
         alt: "Presentation maquette SO SECURIGAZ",
         title: "SO SECURIGAZ",
         href: "https://www.figma.com/design/WK7yy83bVnJiMh7tVeRj00/SO-SECURIGAZ-APP-MOBILE?node-id=0-1&t=JmPv0BTkwJuZmbqg-1",
@@ -87,7 +87,7 @@ const projects = [
       },
       {
         body: "Road of RAMADAN banner for COJEC.",
-        photo: "./assets/Route de careme COJEC.png",
+        photo: "./assets/Route de careme COJEC.webp",
         alt: "Route de careme COJEC",
         type: "photoshop",
         title: "BANNER COJEC",
@@ -101,7 +101,7 @@ const projects = [
     [
       {
         body: "Presentation flyers of FIRM DIGITAL SARL services.",
-        photo: "./assets/FIRM Services.png",
+        photo: "./assets/FIRM Services.webp",
         alt: "Presentation Service FIRM DIGITAL",
         type: "photoshop",
         title: "FLYERS SERVICES FIRM DIGITAL",
@@ -111,7 +111,7 @@ const projects = [
       },
       {
         body: "FIRM DIGITAL SARL is a dynamic company operating in the digital field.",
-        photo: "./assets/Maquette Firm Digital.png",
+        photo: "./assets/Maquette Firm Digital.webp",
         alt: "Presentation maquette WEB SITE FIRM DIGITAL",
         type: "figma",
         title: "WEBSITE FIRM DIGITAL",

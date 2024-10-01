@@ -66,7 +66,7 @@ function Navbar() {
         >
           <img
             className="rounded-full w-44 object-cover"
-            src="./assets/favicon.png"
+            src="./assets/favicon.webp"
             alt="Profil Photo"
           />
         </a>
